@@ -21,8 +21,11 @@ wget -N --no-check-certificate https://raw.githubusercontents.com/lg-yyds/xui/ma
 
 
 Network reinstall OS
+
 Last Modified: 2023-04-16
+
 Linux默认密码：reinstallOS
+
 Supported by reinstallOS
 
 

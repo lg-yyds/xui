@@ -13,7 +13,7 @@ linux一键dd脚本支持Debian 9/10/11、Ubuntu 16.04/18.04/20.04、CentOS 7/8�
 
 使用命令：
 
-wget -N --no-check-certificate ttps://raw.githubusercontents.com/lg-yyds/xui/main/network-reinstall-os.sh && chmod +x network-reinstall-os.sh && ./network-reinstall-os.sh
+wget -N --no-check-certificate https://raw.githubusercontents.com/lg-yyds/xui/main/network-reinstall-os.sh && chmod +x network-reinstall-os.sh && ./network-reinstall-os.sh
 
 输出如下：
 

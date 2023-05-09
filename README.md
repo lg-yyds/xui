@@ -12,9 +12,9 @@ linux一键dd脚本支持Debian 9/10/11、Ubuntu 16.04/18.04/20.04、CentOS 7/8�
 增加CentoS 8、RockyLinux 8、AlmaLinux 8、Fedora 32+、Ubuntu 20.04下运行的支持； 新增dd RockyLinux 8、AlmaLinux 8。 本次更新在测试 腾讯云轻量1C2G配置中测试可用。
 
 使用命令：
-
+```shell
 wget -N --no-check-certificate https://raw.githubusercontents.com/lg-yyds/xui/main/network-reinstall-os.sh && chmod +x network-reinstall-os.sh && ./network-reinstall-os.sh
-
+```
 输出如下：
 
 ##############################################################

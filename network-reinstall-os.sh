@@ -39,15 +39,16 @@ echo "  4) CentOS 7 用户名：root 密码：reinstallOS, 要求2G RAM以上才
 echo "  5) Ubuntu 16.04 LTS (Xenial Xerus) 用户名：root 密码：reinstallOS"
 echo "  6) Ubuntu 18.04 LTS (Bionic Beaver) 用户名：root 密码：reinstallOS"
 echo "  7) Ubuntu 20.04 LTS (Focal Fossa) 用户名：root 密码：reinstallOS ,推荐2G内存以上使用"
-echo "  8) Fedora 32 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
-echo "  9) Fedora 33 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
-echo "  10) Fedora 34 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
-echo "  11) Fedora 35 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
-echo "  12) Fedora 36 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
-echo "  13) RockyLinux 8 (Green Obsidian) 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
-echo "  14) RockyLinux 9 (Blue Onyx) 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
-echo "  15) AlmaLinux 8 （Sky Tiger）用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
-echo "  16) AlmaLinux 9 （Emerald Puma）用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  8) Ubuntu 22.04 LTS (Focal Fossa) 用户名：root 密码：reinstallOS ,推荐2G内存以上使用"
+echo "  9) Fedora 32 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  10) Fedora 33 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  11) Fedora 34 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  12) Fedora 35 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  13) Fedora 36 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  14) RockyLinux 8 (Green Obsidian) 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  15) RockyLinux 9 (Blue Onyx) 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  16) AlmaLinux 8 （Sky Tiger）用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  17) AlmaLinux 9 （Emerald Puma）用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
 echo "  自定义安装请使用：bash network-reinstall.sh -dd '您的直连'"
 echo ""
 echo -n "请输入编号: "
@@ -62,14 +63,15 @@ case $N in
     5) bash network-reinstall.sh -u 16.04 -p reinstallOS ;;
     6) bash network-reinstall.sh -u 18.04 -p reinstallOS ;;
     7) bash network-reinstall.sh -u 20.04 -p reinstallOS ;;
-    8) bash network-reinstall.sh -f 32 -p reinstallOS ;;
-    9) bash network-reinstall.sh -f 33 -p reinstallOS ;;
-    10) bash network-reinstall.sh -f 34 -p reinstallOS ;;
-    11) bash network-reinstall.sh -f 35 -p reinstallOS ;;
-    12) bash network-reinstall.sh -f 36 -p reinstallOS ;;
-    13) bash network-reinstall.sh -r 8 -p reinstallOS ;;
-    14) bash network-reinstall.sh -r 9 -p reinstallOS ;;
-    15) bash network-reinstall.sh -a 8 -p reinstallOS ;;
-    16) bash network-reinstall.sh -a 9 -p reinstallOS ;;
+    8) bash network-reinstall.sh -u 20.04 -p reinstallOS ;;
+    9) bash network-reinstall.sh -f 32 -p reinstallOS ;;
+    10) bash network-reinstall.sh -f 33 -p reinstallOS ;;
+    11) bash network-reinstall.sh -f 34 -p reinstallOS ;;
+    12) bash network-reinstall.sh -f 35 -p reinstallOS ;;
+    13) bash network-reinstall.sh -f 36 -p reinstallOS ;;
+    14) bash network-reinstall.sh -r 8 -p reinstallOS ;;
+    15) bash network-reinstall.sh -r 9 -p reinstallOS ;;
+    16) bash network-reinstall.sh -a 8 -p reinstallOS ;;
+    17) bash network-reinstall.sh -a 9 -p reinstallOS ;;
           *) echo "Wrong input!" ;;
         esac

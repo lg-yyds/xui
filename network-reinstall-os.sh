@@ -6,7 +6,7 @@ SUBNET=$(ip -o -f inet addr show | awk '/scope global/{sub(/[^.]+\//,"0/",$4);pr
 value=$(( 0xffffffff ^ ((1 << (32 - $SUBNET)) - 1) ))
 NETMASK="$(( (value >> 24) & 0xff )).$(( (value >> 16) & 0xff )).$(( (value >> 8) & 0xff )).$(( value & 0xff ))"
 
-wget --no-check-certificate -qO network-reinstall.sh 'https://raw.githubusercontents.com/lg-yyds/onedd/network-reinstall.sh' && chmod a+x network-reinstall.sh
+wget --no-check-certificate -qO network-reinstall.sh 'https://raw.githubusercontents.com/lg-yyds/xui/main/network-reinstall-os.sh' && chmod a+x network-reinstall.sh
 
 #Disabled SELinux
 if [ -f /etc/selinux/config ]; then
@@ -54,7 +54,7 @@ echo -n "请输入编号: "
 read N
 case $N in
 
-    0) wget --no-check-certificate -qO network-reinstall-os.sh "https://raw.githubusercontents.com/lg-yyds/onedd/network-reinstall-os.sh" && chmod +x network-reinstall-os.sh && wget --no-check-certificate -qO network-reinstall.sh 'https://raw.githubusercontents.com/lg-yyds/onedd/network-reinstall.sh' && chmod a+x network-reinstall.sh ;;
+    0) wget --no-check-certificate -qO network-reinstall-os.sh "https://raw.githubusercontents.com/lg-yyds/xui/main/network-reinstall-os.sh" && chmod +x network-reinstall-os.sh && wget --no-check-certificate -qO network-reinstall.sh 'https://raw.githubusercontents.com/lg-yyds/xui/main/network-reinstall-os.sh' && chmod a+x network-reinstall.sh ;;
     1) bash network-reinstall.sh -d 10 -p reinstallOS ;;
     2) bash network-reinstall.sh -d 11 -p reinstallOS ;;
     3) echo "Password: Pwd@CentOS" ; read -s -n1 -p "Press any key to continue..." ; bash network-reinstall.sh -dd 'https://down.vpsaff.net/linux/dd/images/centos-7-image' ;;

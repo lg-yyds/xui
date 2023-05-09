@@ -46,4 +46,6 @@ IP: XXX.XXX.XXX.XXX/24 网关: 173.230.137.1 网络掩码: 255.255.255.0
 15) RockyLinux 8 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用
 16) AlmaLinux 8 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用
 
+
+
 自定义安装请使用：bash network-reinstall.sh -dd '您的直连'

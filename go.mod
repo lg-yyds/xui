@@ -16,7 +16,7 @@ require (
 	github.com/xtls/xray-core v1.5.7
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	go.uber.org/atomic v1.9.0
-	golang.org/x/text v0.3.7
+	golang.org/x/text v0.12.0
 	google.golang.org/grpc v1.47.0
 	gorm.io/driver/sqlite v1.3.4
 	gorm.io/gorm v1.23.5

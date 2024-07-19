@@ -49,6 +49,7 @@ echo "  14) RockyLinux 8 (Green Obsidian) 用户名：root 密码：reinstallOS,
 echo "  15) RockyLinux 9 (Blue Onyx) 用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
 echo "  16) AlmaLinux 8 （Sky Tiger）用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
 echo "  17) AlmaLinux 9 （Emerald Puma）用户名：root 密码：reinstallOS, 要求2G RAM以上才能使用"
+echo "  18) Debian 12（bookworm）用户名：root 密码：reinstallOS"
 echo "  自定义安装请使用：bash network-reinstall.sh -dd '您的直连'"
 echo ""
 echo -n "请输入编号: "
@@ -73,5 +74,6 @@ case $N in
     15) bash network-reinstall.sh -r 9 -p reinstallOS ;;
     16) bash network-reinstall.sh -a 8 -p reinstallOS ;;
     17) bash network-reinstall.sh -a 9 -p reinstallOS ;;
+    18) bash network-reinstall.sh -d 12 -p reinstallOS ;;
           *) echo "Wrong input!" ;;
         esac
